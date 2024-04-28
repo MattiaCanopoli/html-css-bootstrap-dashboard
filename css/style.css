@@ -1,3 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+.badge,
+th,
+td::first-letter {
+    text-transform: capitalize;
+}
