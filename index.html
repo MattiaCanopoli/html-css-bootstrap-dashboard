@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- GOOGLE FONT ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,28 +65,58 @@
         </header>
         <!-- ***TABLE*** -->
         <table class="table table-striped text-capitalize table-hover">
+            <!-- **TABLE HEADER** -->
             <thead>
                 <tr>
                     <th scope="col" class="col-6">titolo</th>
                     <th scope="col" class="col-2 d-none d-sm-block">data prestito</th>
                     <th scope="col" class="col-2">stato</th>
-                    <th scope="col" class="col-2">azioni</th>
+                    <th scope="col" class="col-2 text-center">azioni</th>
                 </tr>
             </thead>
             <tbody>
+                <!-- **TABLE ROW - GREEN** -->
                 <tr>
                     <td scope="row">i pilastri della terra</td>
                     <td>-</td>
-                    <td>pseudoelement</td>
-                    <td>icona1 - icona2</td>
+                    <td>
+                        <span class="badge text-bg-success">disponibile</span>
+                    </td>
+                    <td class="text-center">
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-pencil border border-secondary rounded p-2"></i></button>
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-trash border border-secondary rounded p-2"></i></button>
+                    </td>
                 </tr>
+                <!-- **TABLE ROW - YELLOW** -->
                 <tr>
                     <td scope="row">i pilastri della terra</th>
                     <td>-</td>
-                    <td>pseudoelement</td>
-                    <td>icona1 - icona2</td>
+                    <td>
+                        <span class="badge text-bg-warning">in prestito</span>
+                    </td>
+                    <td class="text-center">
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-pencil border border-secondary rounded p-2"></i></button>
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-trash border border-secondary rounded p-2"></i></button>
+                    </td>
                 </tr>
-
+                <!-- **TABLE ROW - RED** -->
+                <tr>
+                    <td scope="row">i pilastri della terra</th>
+                    <td>-</td>
+                    <td>
+                        <span class="badge text-bg-danger">non disponibile</span>
+                    </td>
+                    <td class="text-center">
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-pencil border border-secondary rounded p-2"></i></button>
+                        <button type="button" class="btn p-0"><i
+                                class="fa-solid fa-trash border border-secondary rounded p-2"></i></button>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </main>
