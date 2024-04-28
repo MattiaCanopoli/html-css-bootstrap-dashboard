@@ -7,3 +7,7 @@ th,
 td::first-letter {
     text-transform: capitalize;
 }
+
+#duck-logo {
+    height: 3.4375rem;
+}
