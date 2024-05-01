@@ -11,3 +11,7 @@ td::first-letter {
 #duck-logo {
     height: 3.4375rem;
 }
+
+.my-check-pad-left {
+    padding-left: 2em;
+}
